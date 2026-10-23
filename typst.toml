@@ -1,0 +1,16 @@
+[package]
+name = "sufe-hw"
+version = "0.1.0"
+entrypoint = "lib.typ"
+authors = ["陶唐 <https://github.com/001eander>"]
+license = "MIT"
+description = "Course homework report with a header, student metadata, and page numbers."
+repository = "https://github.com/001eander/typst-sufe-hw"
+categories = ["report"]
+keywords = ["homework", "assignment", "course", "sufe"]
+compiler = "0.13.0"
+
+[template]
+path = "template"
+entrypoint = "main.typ"
+thumbnail = "thumbnail.png"
