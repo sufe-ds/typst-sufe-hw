@@ -7,8 +7,8 @@
 // - Codly + Codly Languages：代码块样式与语言图标
 
 #import "@preview/physica:0.9.8"
-#import "@preview/cetz:0.5.2"
-#import "@preview/codly:1.3.0"
+#import "@preview/cetz:0.5.3"
+#import "@preview/codly:2.0.0"
 #import "@preview/codly-languages:0.1.10"
 
 #let homework(
@@ -42,8 +42,8 @@
   set par(justify: true, leading: 0.75em)
   set heading(numbering: "1.")
 
-  show: codly.codly-init.with()
-  codly.codly(languages: codly-languages.codly-languages)
+  show: codly.lang-set_(languages: codly-languages.codly-languages)
+  show raw.where(block: true): codly.new
 
   block(above: 0pt, below: 8pt)[
     #set par(leading: 1.2em)
